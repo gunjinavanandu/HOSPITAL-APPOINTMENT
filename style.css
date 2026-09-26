@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #0077b6;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #caf0f8;
+}
+
+/* Hero */
+
+.hero {
+    height: 500px;
+    background: linear-gradient(
+        rgba(0, 119, 182, 0.75),
+        rgba(0, 119, 182, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d")
+    center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #00b4d8;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #0096c7;
+}
+
+/* Common section */
+
+section {
+    padding: 60px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+/* Services */
+
+.services {
+    background-color: white;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    background-color: #f0f9ff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #0077b6;
+    margin-bottom: 15px;
+}
+
+/* Doctors */
+
+.doctor-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.doctor-card {
+    background-color: white;
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    margin: 7px;
+}
+
+/* Appointment */
+
+.appointment {
+    background-color: white;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f4f8fb;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+form .btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Success message */
+
+#message {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #caf0f8;
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 8px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+}

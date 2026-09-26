@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🏥 MediCare Hospital</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#doctors">Doctors</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MediCare Hospital</h1>
+            <p>Your Health, Our Priority</p>
+            <a href="#appointment" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>🩺 General Checkup</h3>
+                <p>Complete health checkup by experienced doctors.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>❤️ Cardiology</h3>
+                <p>Expert treatment and consultation for heart health.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🦷 Dental Care</h3>
+                <p>Professional dental care and treatment.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>👶 Pediatrics</h3>
+                <p>Specialized healthcare for children.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Doctors -->
+    <section id="doctors" class="doctors">
+        <h2>Our Doctors</h2>
+
+        <div class="doctor-container">
+
+            <div class="doctor-card">
+                <div class="doctor-image">👨‍⚕️</div>
+                <h3>Dr. Raj Kumar</h3>
+                <p>Cardiologist</p>
+                <p>Experience: 12 Years</p>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-image">👩‍⚕️</div>
+                <h3>Dr. Priya Sharma</h3>
+                <p>Pediatrician</p>
+                <p>Experience: 8 Years</p>
+            </div>
+
+            <div class="doctor-card">
+                <div class="doctor-image">👨‍⚕️</div>
+                <h3>Dr. Arjun Rao</h3>
+                <p>General Physician</p>
+                <p>Experience: 10 Years</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Appointment -->
+    <section id="appointment" class="appointment">
+        <h2>Book an Appointment</h2>
+
+        <form id="appointmentForm">
+
+            <label>Patient Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+            <label>Select Doctor</label>
+            <select id="doctor" required>
+                <option value="">-- Select Doctor --</option>
+                <option>Dr. Raj Kumar - Cardiologist</option>
+                <option>Dr. Priya Sharma - Pediatrician</option>
+                <option>Dr. Arjun Rao - General Physician</option>
+            </select>
+
+            <label>Appointment Date</label>
+            <input type="date" id="date" required>
+
+            <label>Appointment Time</label>
+            <input type="time" id="time" required>
+
+            <label>Reason for Visit</label>
+            <textarea id="reason" placeholder="Enter reason for visit"></textarea>
+
+            <button type="submit" class="btn">Book Appointment</button>
+
+        </form>
+
+        <div id="message"></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+
+        <p>📍 Hyderabad, Telangana</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📧 info@medicare.com</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 MediCare Hospital. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
